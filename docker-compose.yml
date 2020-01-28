@@ -12,6 +12,7 @@ services:
       - PASSWORD=silenttrinity
     networks:
       - elastic
+     command: python3 /opt/SILENTTRINITY/st.py teamserver 0.0.0.0 password
 networks:
   elastic:
     driver: bridge
