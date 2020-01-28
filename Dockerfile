@@ -7,4 +7,4 @@ pip3 install -r /opt/SILENTTRINITY/requirements.txt
 
 EXPOSE 5000
 
-CMD 'python3 /opt/SILENTTRINITY/st.py teamserver 0.0.0.0 password'
+CMD '/opt/SILENTTRINITY/st.py'

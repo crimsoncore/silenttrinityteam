@@ -1,0 +1,18 @@
+version: '2'
+services:
+  logstash:
+    image: lschoonaert/silenttrinity:latest
+    container_name: silenttrinity
+    ports:
+     - 5000:5000
+    restart: unless-stopped
+    environment:
+      - HOST_IP=localhost
+      - USER=silenttrinity
+      - PASSWORD=silenttrinity
+    networks:
+      - elastic
+networks:
+  elastic:
+    driver: bridge
+
