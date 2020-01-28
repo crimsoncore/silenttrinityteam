@@ -1,8 +1,8 @@
 version: '2'
 services:
   logstash:
-    image: lschoonaert/silenttrinity:latest
-    container_name: silenttrinity
+    image: lschoonaert/silenttrinityteam:latest
+    container_name: silenttrinityteam
     ports:
      - 5000:5000
     restart: unless-stopped
@@ -12,7 +12,7 @@ services:
       - PASSWORD=silenttrinity
     networks:
       - elastic
-     command: python3 /opt/SILENTTRINITY/st.py teamserver 0.0.0.0 password
+    command: python3 /opt/SILENTTRINITY/st.py teamserver 0.0.0.0 password
 networks:
   elastic:
     driver: bridge
