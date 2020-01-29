@@ -1,6 +1,6 @@
 version: '2'
 services:
-  logstash:
+  silenttrinityteam:
     image: lschoonaert/silenttrinityteam:latest
     container_name: silenttrinityteam
     ports:
